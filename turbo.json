@@ -14,9 +14,6 @@
       "dependsOn": ["^watch"],
       "outputs": ["dist/**"],
       "cache": false
-    },
-    "update:ng-rc": {
-      "cache": false
     }
   }
 }

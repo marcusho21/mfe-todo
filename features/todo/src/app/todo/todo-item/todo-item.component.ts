@@ -13,4 +13,6 @@ import {
   styleUrl: './todo-item.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TodoItemComponent {}
+export class TodoItemComponent {
+  todoItem = input.required<Todo>();
+}
