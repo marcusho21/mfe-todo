@@ -1,0 +1,6 @@
+
+> mfe-todo@0.0.0 update:ng-rc /Users/marcusho/Desktop/mfe-todo/shells/mfe-todo
+> ng update @angular/cli@^v17.1.0-next.5 @angular/core@^v17.1.0-next.5
+
+Error: Repository is not clean. Please commit or stash any changes before updating.
+ ELIFECYCLE  Command failed with exit code 1.

@@ -6,11 +6,12 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "mfe-todo": {
+    "todo": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "skipTests": false
         }
       },
       "root": "",
@@ -22,10 +23,10 @@
           "options": {},
           "configurations": {
             "production": {
-              "target": "mfe-todo:esbuild:production"
+              "target": "todo:esbuild:production"
             },
             "development": {
-              "target": "mfe-todo:esbuild:development",
+              "target": "todo:esbuild:development",
               "dev": true
             }
           },
@@ -34,16 +35,16 @@
         "serve": {
           "builder": "@angular-architects/native-federation:build",
           "options": {
-            "target": "mfe-todo:esbuild:development",
+            "target": "todo:esbuild:development",
             "rebuildDelay": 0,
             "dev": true,
-            "port": 4200
+            "port": 4201
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "mfe-todo:build"
+            "buildTarget": "todo:build"
           }
         },
         "test": {
@@ -56,7 +57,7 @@
         "esbuild": {
           "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
-            "outputPath": "dist/mfe-todo",
+            "outputPath": "dist/todo",
             "index": "src/index.html",
             "polyfills": ["zone.js", "es-module-shims"],
             "tsConfig": "tsconfig.app.json",
@@ -83,7 +84,7 @@
               "outputHashing": "all"
             },
             "development": {
-              "optimization": true,
+              "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
             }
@@ -94,10 +95,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "mfe-todo:build:production"
+              "buildTarget": "todo:build:production"
             },
             "development": {
-              "buildTarget": "mfe-todo:build:development"
+              "buildTarget": "todo:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -1,7 +1,7 @@
-import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { UtilsService } from '@mfe-todo/mfe-utils';
+import { MFE_METADATA } from '@mfe-todo/mfe-utils';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +11,5 @@ import { UtilsService } from '@mfe-todo/mfe-utils';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  utils = inject(UtilsService);
-  title = this.utils.getTitle();
+  title = MFE_METADATA.toString();
 }

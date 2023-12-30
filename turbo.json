@@ -1,4 +1,20 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "pipeline": {}
+  "pipeline": {
+    "start": {
+      "cache": false,
+      "dependsOn": ["^build"],
+      "persistent": true
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "watch": {
+      "dependsOn": ["^watch"],
+      "outputs": ["dist/**"],
+      "cache": false
+    },
+    "update:ng-rc": {}
+  }
 }

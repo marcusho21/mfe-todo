@@ -3,11 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "all:update": "pnpm update -r -i -L",
+    "all:clean": "find ./ \\( -name 'node_modules' -o -name 'dist' -o -name '.angular' -o -name '.turbo' \\) -type d -exec rm -rf {} +",
+    "remove:karma": "pnpm remove -r karma-jasmine karma-jasmine-html-reporter karma karma-chrome-launcher karma-coverage jasmine-core @types/jasmine",
+    "add:jest": "pnpm add -r -D jest jest-preset-angular @types/jest"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@angular-architects/native-federation": "^17.0.7",
     "turbo": "^1.11.2"
   }
 }

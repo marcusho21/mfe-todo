@@ -1,12 +1,11 @@
 {
-  "name": "mfe-todo",
+  "name": "todo",
   "version": "0.0.0",
   "scripts": {
-    "start": "ng serve",
+    "start": "ng serve --open=false",
     "build": "ng build",
-    "watch": "ng build --watch --configuration production",
-    "test": "ng test",
-    "update:ng-rc": "ng update @angular/cli@^v17.1.0-next.5 @angular/core@^v17.1.0-next.5"
+    "watch": "ng build todo --watch --configuration production",
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -18,7 +17,6 @@
     "@angular/platform-browser": "^17.0.0",
     "@angular/platform-browser-dynamic": "^17.0.0",
     "@angular/router": "^17.0.0",
-    "@mfe-todo/mfe-utils": "workspace:*",
     "es-module-shims": "^1.5.12",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

@@ -1,0 +1,10 @@
+
+> @mfe-todo/mfe-utils@0.0.0 build /Users/marcusho/Desktop/mfe-todo/packages/mfe-utils
+> ng build
+
+Building Angular Package
+
+------------------------------------------------------------------------------
+Building entry point '@mfe-todo/mfe-utils'
+------------------------------------------------------------------------------
+- Compiling with Angular sources in Ivy partial compilation mode.

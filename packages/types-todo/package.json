@@ -1,0 +1,15 @@
+{
+  "name": "@mfe-todo/types-todo",
+  "version": "0.0.0",
+  "main": "./dist/index.d.ts",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "types:todo"
+  ],
+  "devDependencies": {
+    "typescript": "~5.2.2"
+  }
+}
