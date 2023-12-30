@@ -39,6 +39,15 @@
             "rebuildDelay": 0,
             "dev": true,
             "port": 4201
+          },
+          "configurations": {
+            "production": {
+              "target": "todo:esbuild:production"
+            },
+            "development": {
+              "target": "todo:esbuild:development",
+              "dev": true
+            }
           }
         },
         "extract-i18n": {
@@ -65,7 +74,13 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
             "scripts": [],
-            "main": "src/main.ts"
+            "main": "src/main.ts",
+            "fileReplacements": [
+              {
+                "replace": "src/environments/environment.ts",
+                "with": "src/environments/environment.prod.ts"
+              }
+            ]
           },
           "configurations": {
             "production": {

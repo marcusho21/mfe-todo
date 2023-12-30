@@ -1,3 +1,8 @@
-@if (todoItem(); as todoItem) {
-<li>{{ todoItem.title }}</li>
+@if (todo) {
+<li class="todo-item">
+  <p>{{ todo.title }}</p>
+  <p>{{ todo.description }}</p>
+  <input type="checkbox" [checked]="todo.completed" />
+</li>
+
 }

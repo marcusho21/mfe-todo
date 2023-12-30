@@ -8,3 +8,20 @@ Building Angular Package
 Building entry point '@mfe-todo/mfe-utils'
 ------------------------------------------------------------------------------
 - Compiling with Angular sources in Ivy partial compilation mode.
+✔ Compiling with Angular sources in Ivy partial compilation mode.
+- Writing FESM bundles
+✔ Writing FESM bundles
+- Copying assets
+✔ Copying assets
+- Writing package manifest
+✔ Writing package manifest
+✔ Built @mfe-todo/mfe-utils
+
+------------------------------------------------------------------------------
+Built Angular Package
+ - from: /Users/marcusho/Desktop/mfe-todo/packages/mfe-utils/projects/utils
+ - to:   /Users/marcusho/Desktop/mfe-todo/packages/mfe-utils/dist
+------------------------------------------------------------------------------
+
+Build at: 2023-12-30T21:11:19.073Z - Time: 543ms
+

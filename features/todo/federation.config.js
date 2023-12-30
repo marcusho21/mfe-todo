@@ -7,7 +7,7 @@ module.exports = withNativeFederation({
   name: "todo",
 
   exposes: {
-    "./Component": "./src/app/app.component.ts",
+    "./todo-components": "./src/bootstrap.ts",
   },
 
   shared: {

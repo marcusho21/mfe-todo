@@ -29,6 +29,9 @@ importers:
       '@angular/core':
         specifier: ^17.1.0-next.5
         version: 17.1.0-next.5(rxjs@7.8.1)(zone.js@0.14.2)
+      '@angular/elements':
+        specifier: 17.1.0-next.5
+        version: 17.1.0-next.5(@angular/core@17.1.0-next.5)(rxjs@7.8.1)
       '@angular/forms':
         specifier: ^17.1.0-next.5
         version: 17.1.0-next.5(@angular/common@17.1.0-next.5)(@angular/core@17.1.0-next.5)(@angular/platform-browser@17.1.0-next.5)(rxjs@7.8.1)
@@ -41,6 +44,9 @@ importers:
       '@angular/router':
         specifier: ^17.1.0-next.5
         version: 17.1.0-next.5(@angular/common@17.1.0-next.5)(@angular/core@17.1.0-next.5)(@angular/platform-browser@17.1.0-next.5)(rxjs@7.8.1)
+      '@mfe-todo/mfe-utils':
+        specifier: workspace:*
+        version: link:../../packages/mfe-utils
       es-module-shims:
         specifier: ^1.5.12
         version: 1.8.2
@@ -93,6 +99,9 @@ importers:
       '@angular/core':
         specifier: ^17.1.0-next.5
         version: 17.1.0-next.5(rxjs@7.8.1)(zone.js@0.14.2)
+      '@angular/elements':
+        specifier: 17.1.0-next.5
+        version: 17.1.0-next.5(@angular/core@17.1.0-next.5)(rxjs@7.8.1)
       '@angular/forms':
         specifier: ^17.1.0-next.5
         version: 17.1.0-next.5(@angular/common@17.1.0-next.5)(@angular/core@17.1.0-next.5)(@angular/platform-browser@17.1.0-next.5)(rxjs@7.8.1)
@@ -518,6 +527,18 @@ packages:
       rxjs: 7.8.1
       tslib: 2.6.2
       zone.js: 0.14.2
+
+  /@angular/elements@17.1.0-next.5(@angular/core@17.1.0-next.5)(rxjs@7.8.1):
+    resolution: {integrity: sha512-+l5GR1tOefCxS5PKz4gSD8aMTsownoeg2JvwOgp1bTdCxf3FFNIreQwegCaD9+W8L/puJURnz9ZX3PGleN4hUw==}
+    engines: {node: ^18.13.0 || >=20.9.0}
+    peerDependencies:
+      '@angular/core': 17.1.0-next.5
+      rxjs: ^6.5.3 || ^7.4.0
+    dependencies:
+      '@angular/core': 17.1.0-next.5(rxjs@7.8.1)(zone.js@0.14.2)
+      rxjs: 7.8.1
+      tslib: 2.6.2
+    dev: false
 
   /@angular/forms@17.1.0-next.5(@angular/common@17.1.0-next.5)(@angular/core@17.1.0-next.5)(@angular/platform-browser@17.1.0-next.5)(rxjs@7.8.1):
     resolution: {integrity: sha512-WpPh5IWUxeWCEmyAx51SALsIKGF34vlQKWIvhFJh4zyFcnG8EZGs/mzXAhdFnGDvOnBGYKQC/qNihOYjiZiIGw==}

@@ -1,12 +1,8 @@
 import type { Todo } from '@mfe-todo/types-todo';
-import {
-  ChangeDetectionStrategy,
-  Component,
-  ɵinput as input,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-todo-item',
+  selector: 'todo-item',
   standalone: true,
   imports: [],
   templateUrl: './todo-item.component.html',
@@ -14,5 +10,5 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TodoItemComponent {
-  todoItem = input.required<Todo>();
+  @Input({ required: true }) todo: Todo | null = null;
 }
