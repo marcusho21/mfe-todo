@@ -5,7 +5,8 @@
     "start": "ng serve --open=false",
     "build": "ng build",
     "watch": "ng build todo --watch --configuration production",
-    "test": "ng test"
+    "test": "ng test",
+    "update:ng-rc": "ng update --next @angular/cli @angular/core"
   },
   "private": true,
   "dependencies": {
