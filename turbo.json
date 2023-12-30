@@ -14,6 +14,10 @@
       "dependsOn": ["^watch"],
       "outputs": ["dist/**"],
       "cache": false
+    },
+    "test": {
+      "dependsOn": ["^test"],
+      "cache": false
     }
   }
 }
