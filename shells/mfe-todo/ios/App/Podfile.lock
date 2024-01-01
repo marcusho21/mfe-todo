@@ -1,0 +1,28 @@
+PODS:
+  - Capacitor (5.6.0):
+    - CapacitorCordova
+  - CapacitorCordova (5.6.0)
+  - CapacitorScreenOrientation (5.0.6):
+    - Capacitor
+
+DEPENDENCIES:
+  - "Capacitor (from `../../../../node_modules/.pnpm/@capacitor+ios@5.6.0_@capacitor+core@5.6.0/node_modules/@capacitor/ios`)"
+  - "CapacitorCordova (from `../../../../node_modules/.pnpm/@capacitor+ios@5.6.0_@capacitor+core@5.6.0/node_modules/@capacitor/ios`)"
+  - "CapacitorScreenOrientation (from `../../../../node_modules/.pnpm/@capacitor+screen-orientation@5.0.6_@capacitor+core@5.6.0/node_modules/@capacitor/screen-orientation`)"
+
+EXTERNAL SOURCES:
+  Capacitor:
+    :path: "../../../../node_modules/.pnpm/@capacitor+ios@5.6.0_@capacitor+core@5.6.0/node_modules/@capacitor/ios"
+  CapacitorCordova:
+    :path: "../../../../node_modules/.pnpm/@capacitor+ios@5.6.0_@capacitor+core@5.6.0/node_modules/@capacitor/ios"
+  CapacitorScreenOrientation:
+    :path: "../../../../node_modules/.pnpm/@capacitor+screen-orientation@5.0.6_@capacitor+core@5.6.0/node_modules/@capacitor/screen-orientation"
+
+SPEC CHECKSUMS:
+  Capacitor: ebfc16cdb8116d04c101686b080342872da42d43
+  CapacitorCordova: 931b48fcdbc9bc985fc2f16cec9f77c794a27729
+  CapacitorScreenOrientation: e5ef438489815d05340f1b51a2b1794108dc0ac3
+
+PODFILE CHECKSUM: b2e065bbf365fca19ad50d4bc86f29f8c888637b
+
+COCOAPODS: 1.14.3

@@ -3,8 +3,11 @@
   "pipeline": {
     "start": {
       "cache": false,
-      "dependsOn": ["^build"],
-      "persistent": true
+      "dependsOn": ["^build"]
+    },
+    "start:ios": {
+      "cache": false,
+      "dependsOn": ["^start"]
     },
     "build": {
       "dependsOn": ["^build"],
