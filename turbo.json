@@ -3,11 +3,11 @@
   "pipeline": {
     "start": {
       "cache": false,
+      "persistent": true,
       "dependsOn": ["^build"]
     },
-    "start:ios": {
-      "cache": false,
-      "dependsOn": ["^start"]
+    "run:ios:mfe-todo": {
+      "cache": false
     },
     "build": {
       "dependsOn": ["^build"],

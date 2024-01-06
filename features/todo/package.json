@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "scripts": {
     "start": "ng serve -o false --configuration production",
-    "start:ios": "pnpm start",
     "build": "ng build",
     "watch": "ng build todo --watch --configuration production",
     "test": "ng test"

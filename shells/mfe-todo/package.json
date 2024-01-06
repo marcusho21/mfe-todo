@@ -6,7 +6,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration production",
     "test": "ng test",
-    "start:ios": "ng serve --host 0.0.0.0 & cap run ios --parallel"
+    "stats-json": "ng run mfe-todo:esbuild --stats-json",
+    "run:ios:mfe-todo": "cap run ios"
   },
   "private": true,
   "dependencies": {

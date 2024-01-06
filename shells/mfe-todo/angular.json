@@ -89,18 +89,6 @@
             }
           },
           "defaultConfiguration": "production"
-        },
-        "serve-original": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "buildTarget": "mfe-todo:build:production"
-            },
-            "development": {
-              "buildTarget": "mfe-todo:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
         }
       }
     }
