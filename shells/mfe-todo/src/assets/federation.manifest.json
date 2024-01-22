@@ -1,3 +1,3 @@
 {
-  "todo": "http://localhost:4201/remoteEntry.json"
+  "todo": "https://kscsprpkiwdfqfsyajzo.supabase.co/storage/v1/object/public/micro-frontend/todo/remoteEntry.json"
 }

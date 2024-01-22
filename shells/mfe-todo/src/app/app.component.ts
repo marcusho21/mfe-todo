@@ -16,7 +16,6 @@ export class AppComponent {
   constructor() {
     loadRemoteModule({
       exposedModule: './todo-components',
-      remoteEntry: 'http://localhost:4201/remoteEntry.js',
       remoteName: 'todo',
     });
   }
